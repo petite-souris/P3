@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', o_views.home),
     path('okohorn/', o_views.home),
-    path('volva/', o_views.volva),
+    path('volva/', o_views.volva, name="volva"),
 ]
