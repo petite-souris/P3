@@ -1,11 +1,10 @@
 {% extends 'Okohorn/_base.html' %}
-{% load static/home.css %}
 
 {% block title %}Accueil - Okohorn{% endblock title %}
 
 {% block content %}
 <section class="sct-1">
-    <button class="button">Entrer</button>
+    <button class="button"><a href="{% url 'volva' %}">Entrer</a></button>
 </section>
 <section class="sct-2">
     <h1>Okohorn</h1>
