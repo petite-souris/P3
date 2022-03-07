@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from Okohorn import views as o_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', o_views.home),
+    path('okohorn/', o_views.home),
+    path('volva/', o_views.volva),
 ]
