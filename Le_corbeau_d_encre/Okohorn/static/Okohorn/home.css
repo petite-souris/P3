@@ -1,0 +1,84 @@
+.sct-1 {
+    background-image: url("medias/1643981875810.jpeg");
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 800px;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.button {
+    color: #ffffff;
+    font-size: large;
+    background-color: #000000;
+    border: 3px solid #002222;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #ffffff;
+    padding: 9px 15px 9px 15px;
+    margin-top: 500px;
+    margin-left: 750px;
+}
+
+.button:hover {
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px 2px #000000;
+}
+
+.sct-2 {
+    text-align: center;
+}
+
+img {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    opacity: 50%;
+}
+
+@font-face {
+    font-family: "viking";
+    src: url("Okohorn/VIKING-N.TTF") format("viking");
+}
+
+h1 {
+    font-family: "viking";
+    position: absolute;
+    font-size: 65px;
+    top: 700px;
+    left: 675px;
+}
+
+p {
+    font-size: 21px;
+    position: absolute;
+}
+
+.p1 {
+    padding-left: 150px;
+    padding-right: 150px;
+    top: 900px;
+    left: 50px;
+}
+
+.p2 {
+    padding-left: 150px;
+    padding-right: 150px;
+    top: 900px;
+    left: 50px;
+}
+
+.p3 {
+    padding-left: 150px;
+    padding-right: 150px;
+    top: 900px;
+    left: 50px;
+}
+
+.p4 {
+    padding-left: 150px;
+    padding-right: 150px;
+    top: 900px;
+    left: 50px;
+}
