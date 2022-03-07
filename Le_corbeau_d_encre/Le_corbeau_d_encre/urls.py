@@ -22,4 +22,5 @@ urlpatterns = [
     path('', o_views.home),
     path('okohorn/', o_views.home),
     path('volva/', o_views.volva, name="volva"),
+    path('contact-us/', o_views.contact, name='contact'),
 ]
