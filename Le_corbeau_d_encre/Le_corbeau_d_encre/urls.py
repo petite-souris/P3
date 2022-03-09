@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from Okohorn import views as o_views
+from Customer_file import views as cf_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -23,4 +24,5 @@ urlpatterns = [
     path('okohorn/', o_views.home),
     path('volva/', o_views.volva, name="volva"),
     path('contact-us/', o_views.contact, name='contact'),
+    path('home/', cf_views.home, name="home_custom"),
 ]
