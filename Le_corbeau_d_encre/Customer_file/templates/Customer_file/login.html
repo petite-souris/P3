@@ -1,0 +1,13 @@
+{% extends 'Customer_file/_base1.html' %}
+
+{% block title %}Dossier client - Connexion{% endblock title %}
+
+{% block content %}
+<p>Nous sommes là pour vous aider.</p>
+
+<form action="" method="post" novalidate>
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Envoyer">
+</form>
+{% endblock content %}
