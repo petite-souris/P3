@@ -40,3 +40,7 @@ button:hover {
     border: 2px solid black;
     box-shadow: 2px 2px 2px 2px white;
 }
+
+a {
+    text-decoration: none;
+}
