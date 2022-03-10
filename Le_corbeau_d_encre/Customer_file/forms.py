@@ -2,12 +2,17 @@ from django import forms
 
 
 class LoginForm(forms.Form):
-    name = forms.CharField(required=False)
-    email = forms.EmailField()
-    message = forms.CharField(max_length=1000)
+    last_name = forms.CharField(required=True)
+    first_name = forms.CharField(required=True)
+    password = forms.PasswordInput()
 
 
 class NewCustomForm(forms.Form):
-    name = forms.CharField(required=False)
+    gender = forms.ChoiceField(required=True)
+    last_name = forms.CharField(required=True)
+    first_name = forms.CharField(required=True)
+    birthday = forms.DateField(required=True)
+    adress = forms.CharField()
     email = forms.EmailField()
-    message = forms.CharField(max_length=1000)
+    phone_number = forms.IntegerField(required=True)
+    password = forms.PasswordInput()
