@@ -4,18 +4,19 @@
 {% block title %}Dossier client - Accueil{% endblock title %}
 
 {% block content %}
-<div class="sct-1">
-    <img src="images/background.jpg" alt="Image de fond avec le logo du salon de tatouage.">
+<div class="sct-1 flex">
     <h1>Le Corbeau d'Encre</h1>
+    <img src="{% static 'Customer_file/images/background.jpg' %}"
+        alt="Image de fond avec le logo du salon de tatouage.">
 </div>
-<div class="sct-2">
+<div class="sct-2 flex">
     <p>Bienvenue sur notre page d'accueil pour le dossier client du salon de tatouage Le Corbeau d'Encre.</p>
     <p>Ce dossier client va référer toutes vos données personnelles mais aussi des données par rapport à votre projet.
     </p>
     <p>Mais avant cela, une petite question : </p>
     <p>Êtes-vous : </p>
 </div>
-<div class="sct-3">
+<div class="sct-3 flex">
     <button class="btn1"><a href="{% url 'new_custom' %}">Un nouveau client ?</a></button>
     <button class="btn2"><a href="{% url 'login' %}">Un ancien client ?</a></button>
 </div>
