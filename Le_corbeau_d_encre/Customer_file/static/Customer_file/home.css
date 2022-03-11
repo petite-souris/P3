@@ -12,8 +12,8 @@
     align-items: flex-start;
 }
 h1 {
-    font-size: 56px;
-    color: red;
+    font-size: 45px;
+    color: lightseagreen;
     background: none;
 }
 img {
@@ -39,7 +39,7 @@ img {
 button {
     font-size: 21px;
     border: 2px solid white;
-    box-shadow: 1px 1px 1px 1px red;
+    box-shadow: 2px 2px 2px 2px red;
     padding: 3px 3px 3px 3px;
     margin: 6px 6px 6px 6px;
 }
