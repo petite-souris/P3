@@ -7,11 +7,11 @@
 <div class="sct-1 flex">
     <img src="{% static 'Customer_file/images/background.jpg' %}"
         alt="Image de fond avec le logo du salon de tatouage.">
+    </div>
+    <div class="sct-2 flex">
     <p>Bienvenue dans le salon de tatouage Le Corbeau d'Encre.</p>
     <p>Nous te laissons le formulaire suivant pour remplir tes informations personnelles.</p>
-</div>
-<div class="sct-2 flex">
-    <form class="form flex" action="" method="post" novalidate>
+    <form class="form" action="" method="post" novalidate>
         {% csrf_token %}
         {{ form }}
         <input type="submit" value="Suivant">
