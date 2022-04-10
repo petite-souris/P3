@@ -3,6 +3,7 @@
     background-color: #000000;
     color: #ffffff;
 }
+
 .sct-1 {
     background-image: url("medias/1643981875810.jpeg");
     background-repeat: no-repeat;
@@ -31,10 +32,6 @@
     box-shadow: 2px 2px 2px 2px #000000;
 }
 
-.sct-2 {
-    text-align: center;
-}
-
 img {
     position: relative;
     width: 500px;
@@ -55,35 +52,11 @@ h1 {
     left: 675px;
 }
 
-p {
+.container {
     font-size: 21px;
-    position: absolute;
 }
 
-.p1 {
-    padding-left: 150px;
-    padding-right: 150px;
-    top: 900px;
-    left: 50px;
-}
-
-.p2 {
-    padding-left: 150px;
-    padding-right: 150px;
-    top: 900px;
-    left: 50px;
-}
-
-.p3 {
-    padding-left: 150px;
-    padding-right: 150px;
-    top: 900px;
-    left: 50px;
-}
-
-.p4 {
-    padding-left: 150px;
-    padding-right: 150px;
-    top: 900px;
-    left: 50px;
+p {
+    margin-left: 300px;
+    margin-right: 300px;
 }
