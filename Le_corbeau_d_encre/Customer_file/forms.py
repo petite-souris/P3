@@ -19,7 +19,7 @@ class NewCustomForm(forms.Form):
     first_name = forms.CharField(required=True)
     birthday = forms.DateField(required=True)
     adress = forms.CharField()
-    email = forms.EmailField()
+    email = forms.EmailField(required=True)
     phone_number = forms.IntegerField(required=True)
     password2 = forms.CharField(widget=forms.PasswordInput())
 
