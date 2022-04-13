@@ -1,16 +1,17 @@
+from django.contrib.auth.decorators import login_required
+from authentication import models
 from django.shortcuts import render
-from Customer_file.forms import NewCustomForm
-
+from . import models
 
 def home(request):
-    return render(request, 'Customer_file/home.html')
+    css = "Customer_file/css/home.css"
+    return render(request, 'Customer_file/home.html', {"css":css})
 
 
-def new_custom(request):
-    # Add a new form :
-    form = NewCustomForm()
-    # Pass the form to a gabarit :
-    return render(request, 'Customer_file/new_custom.html', {'form': form})
+def new_customer(request):
+    return render(request, 'Customer_file/inscription.html')
 
+# @login_required
 def user_page(request):
-    return render(request, 'Customer_file/user_page.html')
+    css = "Customer_file/css/user_page.css"
+    return render(request, 'Customer_file/user_page.html', {"css":css})
