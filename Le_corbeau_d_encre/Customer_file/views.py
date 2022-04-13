@@ -18,3 +18,6 @@ def new_custom(request):
     form = NewCustomForm()
     # Pass the form to a gabarit :
     return render(request, 'Customer_file/new_custom.html', {'form': form})
+
+def user_page(request):
+    return render(request, 'Customer_file/user_page.html')

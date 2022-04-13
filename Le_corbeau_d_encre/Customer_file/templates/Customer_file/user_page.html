@@ -1,0 +1,16 @@
+{% extends 'Customer_file/_base4.html' %}
+{% load static %}
+{% block title %}Mon compte : {{user.username}}{% endblock title %}
+{% block content %}
+<section>
+    <div class="container">
+        <conteneur>
+            <h2>Utilisateur:</h2>
+            <p>Pseudo : {{user.username}}</p>
+            <p>Nom : {{user.first_name}}</p>
+            <p>Prénom : {{user.last_name}}</p>
+            <p>Email : {{user.email}}</p>
+        </conteneur>
+    </div>
+</section>
+{% endblock content %}
