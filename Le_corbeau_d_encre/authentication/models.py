@@ -12,6 +12,13 @@ class User(AbstractUser):
 
     date_of_birth = models.DateField(verbose_name='Date de naissance')
     email = models.EmailField(verbose_name='Adresse email')
-    gender = models.CharField(max_length=30, verbose_name='Genre')
+
+    MEN = 'MEN'
+    WOMAN = 'WOMAN'
+    GENDER_CHOICES = (
+        (MEN, 'Homme'),
+        (WOMAN, 'Femme'),
+    )
+    gender = models.CharField(max_length=30, choices=GENDER_CHOICES, verbose_name='Genre')
 
     REQUIRED_FIELDS = ['date_of_birth', 'email', 'gender']
