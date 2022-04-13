@@ -26,7 +26,6 @@ urlpatterns = [
     path('volva', o_views.volva, name="volva"),
     path('contact-us', o_views.contact, name="contact"),
     path('home', cf_views.home, name="home_custom"),
-    # path('login', cf_views.login, name="login"),
     path('new_custom', cf_views.new_custom, name="new_custom"),
     path('custom_login', a_views.login_page, name='login'),
     path('custom_logout', a_views.logout_user, name='logout'),
