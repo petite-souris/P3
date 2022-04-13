@@ -22,7 +22,7 @@
             <form method="post">
                 {{form.as_p}}
                 {% csrf_token %}
-                <button type="submit">Suivant</button>
+                <button type="submit"><a href="{% url 'choices' %}">Suivant</button>
             </form>
         </div>
     </div>
