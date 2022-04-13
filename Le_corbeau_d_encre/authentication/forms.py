@@ -7,3 +7,9 @@ class LoginForm(forms.Form):
     last_name = forms.CharField(required=True, label="Nom de famille ")
     first_name = forms.CharField(required=True, label="Prénom ")
     password1 = forms.CharField(widget=forms.PasswordInput(), label="Mot de passe ")
+
+# Création du formulaire inscription.
+class SignupForm(UserCreationForm):
+    class Meta(UserCreationForm.Meta):
+        model = get_user_model()
+        fields = ['gender', 'last_name', 'first_name', 'date_of_birth', 'email', 'role']
