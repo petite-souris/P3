@@ -10,7 +10,6 @@ def logout_user(request):
     return redirect('login')
 
 def login_page(request):
-    message = ""
     # Display form creted with abstractuser :
     form = forms.LoginForm()
     # Verify if the form is complete. If it's complete, make the method :
@@ -28,5 +27,19 @@ def login_page(request):
                 message = 'Identifiants invalides, veuillez recommencer s il-vous-plaît.'
                 return redirect ('home_custom')
 
-    css = "authentication/login_style.css"
-    return render(request, 'authentication/login.html', context = {'form': form , "css": css , "message": message})
+    css = "authentication/css/login_style.css"
+    return render(request, 'authentication/login.html', context = {'form': form , "css":css})
+
+def signup_page(request):
+    form = forms.SignupForm()
+    if request.method == 'POST':
+        form = forms.SignupForm(request.POST)
+        #condition si le formulaire est valide, on sauve le formulaire et on le login
+        if form.is_valid():
+            user = form.save()
+            # auto-login user
+            login(request, user)
+            return redirect('user_page')
+
+    css = "authentication/css/inscription_style.css"
+    return render(request, 'authentication/inscription.html', context={'form': form, "css":css})
