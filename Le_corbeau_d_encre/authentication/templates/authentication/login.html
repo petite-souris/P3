@@ -1,0 +1,26 @@
+{%extends 'authentication/_base.html'%}
+{% load static %}
+
+{% block title %}Dossier Client{% endblock title %}
+{% block content %}
+<section>
+    <div class="container">
+        <div class="col-1">
+            <img src="{% static 'authentication/images/background.jpg' %}" alt="Photo de fond du salon.">
+        </div>
+        <div class="col-2">
+            <p>Bienvenue</p>
+            <p>dans le salon</p>
+            <p>de tatouage</p>
+            <p>Le Corbeau d'Encre.</p>
+        </div>
+        <div class="col-3">
+            <form method="post">
+                {{form.as_p}}
+                {% csrf_token %}
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock content %}

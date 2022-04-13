@@ -1,0 +1,40 @@
+body { 
+  font-family: "Arial Black", Arial, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+}
+section{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+p{
+  margin: 25px;
+  text-align: center;
+}
+form{
+  color: white;
+  max-width: 500px;
+  padding: 60px;
+  justify-content: center;
+  padding: 15px;
+}
+label{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: medium;
+  width: 100%;
+  color: white;
+}
+button{
+  display: block;
+  margin : auto;
+}
