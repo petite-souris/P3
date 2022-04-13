@@ -26,8 +26,8 @@ urlpatterns = [
     path('volva', o_views.volva, name="volva"),
     path('contact-us', o_views.contact, name="contact"),
     path('home', cf_views.home, name="home_custom"),
-    path('new_custom', cf_views.new_custom, name="new_custom"),
+    path('new_custom', a_views.signup_page, name="inscription"),
     path('custom_login', a_views.login_page, name='login'),
     path('custom_logout', a_views.logout_user, name='logout'),
-    path('user_page', cf_views.user_page, name='user_page'),
+    path('user_page', cf_views.user_page, name='user'),
 ]
