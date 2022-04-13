@@ -1,0 +1,16 @@
+{%extends 'authentication/_base.html'%}
+
+{% load static %}
+{% block title %}Dossier Client{% endblock title %}
+{% block content %}
+<section>
+    <div class="container">
+        <p>{{message}}</p>
+        <form method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <button type="submit">Se connecter</button>
+        </form>
+    </div>
+</section>
+{% endblock content %}
