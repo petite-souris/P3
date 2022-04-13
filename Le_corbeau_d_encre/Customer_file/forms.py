@@ -1,18 +1,5 @@
 from django import forms
 
-
-class LoginForm(forms.Form):
-    last_name = forms.CharField(required=True)
-    first_name = forms.CharField(required=True)
-    password1 = forms.CharField(widget=forms.PasswordInput())
-
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields['last_name'].label = "Nom de famille"
-        self.fields['first_name'].label = "Prénom"
-        self.fields['password1'].label = "Mot de passe"
-
-
 class NewCustomForm(forms.Form):
     gender = forms.ChoiceField(required=True)
     last_name = forms.CharField(required=True)
