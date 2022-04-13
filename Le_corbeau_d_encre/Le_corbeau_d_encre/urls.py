@@ -17,14 +17,18 @@ from django.contrib import admin
 from django.urls import path
 from Okohorn import views as o_views
 from Customer_file import views as cf_views
+from authentication import views as a_views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', o_views.home),
-    path('okohorn/', o_views.home),
-    path('volva/', o_views.volva, name="volva"),
-    path('contact-us/', o_views.contact, name='contact'),
-    path('home/', cf_views.home, name="home_custom"),
-    path('login/', cf_views.login, name="login"),
-    path('new_custom/', cf_views.new_custom, name="new_custom")
+    path('okohorn', o_views.home),
+    path('volva', o_views.volva, name="volva"),
+    path('contact-us', o_views.contact, name="contact"),
+    path('home', cf_views.home, name="home_custom"),
+    # path('login', cf_views.login, name="login"),
+    path('new_custom', cf_views.new_custom, name="new_custom"),
+    path('custom_login', a_views.login_page, name='login'),
+    path('custom_logout', a_views.logout_user, name='logout'),
+    path('user_page', cf_views.user_page, name='user_page'),
 ]
