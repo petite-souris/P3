@@ -1,4 +1,4 @@
-{% extends 'Customer_file/_base1.html' %}
+{% extends 'Customer_file/_base.html' %}
 {% load static %}
 
 {% block title %}Dossier client - Accueil{% endblock title %}
@@ -17,7 +17,7 @@
     <p>Êtes-vous : </p>
 </div>
 <div class="sct-3 flex">
-    <button class="btn1"><a href="{% url 'new_custom' %}">Un nouveau client ?</a></button>
+    <button class="btn1"><a href="{% url 'inscription' %}">Un nouveau client ?</a></button>
     <button class="btn2"><a href="{% url 'login' %}">Un ancien client ?</a></button>
 </div>
 {% endblock content %}
