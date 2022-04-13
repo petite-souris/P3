@@ -7,11 +7,12 @@ def home(request):
     css = "Customer_file/css/home.css"
     return render(request, 'Customer_file/home.html', {"css":css})
 
-
-def new_customer(request):
-    return render(request, 'Customer_file/inscription.html')
-
 # @login_required
 def user_page(request):
     css = "Customer_file/css/user_page.css"
     return render(request, 'Customer_file/user_page.html', {"css":css})
+
+# @login_required
+def choices(request):
+    css = "Customer_file/css/choices.css"
+    return render(request, 'Customer_file/choices.html', {"css":css})

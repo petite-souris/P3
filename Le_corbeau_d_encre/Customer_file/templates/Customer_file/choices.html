@@ -1,0 +1,22 @@
+{% extends 'Customer_file/_base.html' %}
+{% load static %}
+
+{% block title %}Dossier client - Rendez-vous{% endblock title %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="col-1">
+            <img src="{% static 'Customer_file/images/background.jpg' %}"
+                alt="Image de fond avec le logo du salon de tatouage.">
+        </div>
+        <div class="col-2">
+            <p>Avant d'aller plus loin, petite question : </p>
+            <p>Vous êtes là pour : </p>
+            <button class="btn1"><a href="{% url 'login' %}">Un nouveau projet ?</a></button>
+            <button class="btn2"><a href="{% url 'login' %}">Retouches ?</a></button>
+            <button class="btn3"><a href="{% url 'login' %}">Un cover ?</a></button>
+        </div>
+    </div>
+</section>
+{% endblock content %}
