@@ -1,16 +1,9 @@
 from django.shortcuts import render
-from Customer_file.forms import LoginForm, NewCustomForm
+from Customer_file.forms import NewCustomForm
 
 
 def home(request):
     return render(request, 'Customer_file/home.html')
-
-
-def login(request):
-    # Add a new form :
-    form = LoginForm()
-    # Pass the form to a gabarit :
-    return render(request, 'Customer_file/login.html', {'form': form})
 
 
 def new_custom(request):
