@@ -3,11 +3,13 @@ from Okohorn.forms import ContactUsForm
 
 
 def home(request):
-    return render(request, 'Okohorn/home.html')
+    css = "Okohorn/css/home.css"
+    return render(request, 'Okohorn/home.html', context={"css": css})
 
 
 def volva(request):
-    return render(request, 'Okohorn/volva.html')
+    css = "Okohorn/css/volva.css"
+    return render(request, 'Okohorn/volva.html', context={"css": css})
 
 
 def contact(request):
