@@ -1,9 +1,11 @@
 {% extends 'Okohorn/_base.html' %}
+{% load static %}
 
 {% block title %}Accueil - Okohorn{% endblock title %}
 
 {% block content %}
 <section class="sct-1">
+    <img src="{% static 'Okohorn/images/Logo_Okohorn.jpeg' %}" alt="Logo Okohorn.">
     <button class="button"><a href="{% url 'volva' %}">Entrer</a></button>
 </section>
 <section class="sct-2">
