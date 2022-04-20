@@ -3,16 +3,12 @@
     background-color: #000000;
     color: #ffffff;
 }
-
+/* Section 1 : */
 .sct-1 {
-    background-image: url("medias/Logo_Okohorn.jpeg");
-    background-repeat: no-repeat;
-    width: 1200px;
-    height: 800px;
     margin-top: 50px;
     margin-left: 300px;
 }
-
+/* Button : */
 .button {
     color: #ffffff;
     font-size: large;
@@ -21,29 +17,22 @@
     border-radius: 15px;
     box-shadow: 2px 2px 2px 2px #ffffff;
     padding: 9px 15px 9px 15px;
-    margin-top: 500px;
+    margin-top: -100px;
     margin-left: 750px;
+    margin-bottom: 200px;
 }
-
 .button:hover {
     font-weight: bold;
     color: #000000;
     background-color: #ffffff;
     box-shadow: 2px 2px 2px 2px #000000;
 }
-
-img {
-    position: relative;
-    width: 500px;
-    height: 500px;
-    opacity: 50%;
-}
-
+/* Font : */
 @font-face {
     font-family: "viking";
     src: url("Okohorn/VIKING-N.TTF") format("viking");
 }
-
+/* Section 2 : */
 h1 {
     font-family: "viking";
     position: absolute;
@@ -51,11 +40,9 @@ h1 {
     top: 700px;
     left: 675px;
 }
-
 .container {
     font-size: 21px;
 }
-
 p {
     margin-left: 300px;
     margin-right: 300px;
