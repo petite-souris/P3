@@ -45,21 +45,13 @@ li{
   color: white;
 }
 input{
-  /* permet de declarer chaque input dans une ligne apart */
   display: block;
-  /* applique une marge */
   margin: 10px auto;
-  /* defini la taille des champs maximal */
   width: 300px;
-  /* donne une marge interne verticale et horizontale*/
   padding: 6px 10px;
 }
 input[type="submit"]{
-  /* permet de changer la couleur du font de submit */
-  background-color: red;
-  /* permet de changer le style de la police de standart à bold */
   font-weight: bold;
-  /* permet une reaction lorsque la souris passse dessus */
   cursor: pointer;
 }
 input[type="checkbox"]{
