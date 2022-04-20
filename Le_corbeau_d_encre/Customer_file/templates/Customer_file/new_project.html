@@ -1,0 +1,26 @@
+{% extends 'Customer_file/_base.html' %}
+{% load static %}
+
+{% block title %}Dossier client - Nouveau projet{% endblock title %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="col-1">
+            <img src="{% static 'Customer_file\images\Femme\fantasy-6372657_1920.jpg' %}"
+                alt="Idée tatouage sur le visage."> 
+            <button class="btn1"><ahref="{% url 'height' %}">Visage</a></button>
+        </div>
+        <div class="col-2">
+            <img src="{% static 'Customer_file\images\Femme\map-2591759_1920.jpg' %}"
+                alt="Idée tatouage sur l'avant-bras.">
+            <button class="btn2"><a href="{% url 'height' %}">Avant-bras</a></button>
+        </div>
+        <div class="col-3">
+            <img src="{% static 'Customer_file\images\Femme\people-2565092_1920.jpg' %}"
+                alt="Idée tatouage sur la cuisse.">
+            <button class="btn3"><a href="{% url 'height' %}">Cuisse</a></button>
+        </div>
+    </div>
+</section>
+{% endblock content %}
