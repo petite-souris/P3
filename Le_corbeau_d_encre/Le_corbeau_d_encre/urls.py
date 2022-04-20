@@ -42,4 +42,7 @@ urlpatterns = [
     path('user_page', cf_views.user_page, name='user'),
     # Path for choices for appointement.
     path('choices', cf_views.choices, name='choices'),
+    path('new_project', cf_views.new_project, name='new_project'),
+    path('height', cf_views.height, name='height'),
+    path('style', cf_views.style, name='style'),
 ]
