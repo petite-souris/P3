@@ -1,0 +1,29 @@
+{% extends 'Customer_file/_base.html' %}
+{% load static %}
+
+{% block title %}Dossier client - Taille du tatouage{% endblock title %}
+
+{% block content %}
+<section>
+    <div class="container">
+        <div class="col-1">
+            <img src="{% static 'Customer_file/images/background.jpg' %}"
+                alt="Image de fond avec le logo du salon de tatouage.">
+        </div>
+        <div class="col-2">
+            <div class="col-3">
+                <div class="carre1"></div>
+                <button class="btn1"><a href="{% url 'style' %}">Petit</a></button>
+            </div>
+            <div class="col-4">
+                <div class="carre2"></div>
+                <button class="btn2"><a href="{% url 'style' %}">Moyen</a></button>
+            </div>
+            <div class="col-5">
+                <div class="carre3"></div>
+                <button class="btn3"><a href="{% url 'style' %}">Gros</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

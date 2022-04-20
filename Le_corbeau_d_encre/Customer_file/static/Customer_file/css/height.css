@@ -1,0 +1,60 @@
+body { 
+  font-family: "Arial Black", Arial, Verdana, sans-serif;
+  background-color: #000000;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+img {
+    width: 400px;
+    height: 400px;
+}
+div {
+    display: flex;
+}
+.col-2 {
+    align-items: center;
+}
+.col-3, .col-4, .col-5 {
+    flex-direction: column;
+    align-items: center;
+}
+.carre1, .carre2, .carre3 {
+    margin-right: 30px;
+}
+.carre1 {
+    width: 100px;
+    height: 100px;
+    border: 5px solid #ffffff;
+}
+.carre2 { 
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ffffff;
+}
+.carre3 {
+    width: 400px;
+    height: 400px;
+    border: 5px solid #ffffff;
+}
+a {
+    text-decoration: none;
+}
+button {
+    width: 100px;
+    height: 50px;
+    font-size: 21px;
+    border: 2px solid white;
+    box-shadow: 2px 2px 2px 2px red;
+    padding: 3px 3px 3px 3px;
+    margin: 6px 6px 6px 6px;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px 2px white;
+}
