@@ -5,12 +5,27 @@
 {% block content %}
 <section>
     <div class="container">
-        <h2>Utilisateur:</h2>
-        <p>Nom : {{user.first_name}}</p>
-        <p>Prénom : {{user.last_name}}</p>
-        <p>Email : {{user.email}}</p>
-        <p>Dernière connexion : {{user.last_login}}</p>
-        <p>Création du compte le : {{user.date_joined}}</p>
+        <div class="col-1">
+            <img src="{% static 'authentication/images/background.jpg' %}"
+                alt="Image de fond avec le logo du salon de tatouage.">
+        </div>
+        <div class="col-2">
+            <h2>Utilisateur:</h2>
+            <p>Genre : {{user.gender}}</p>
+            <p>Nom : {{user.first_name}}</p>
+            <p>Prénom : {{user.last_name}}</p>
+            <p>Email : {{user.email}}</p>
+            <p>Date de naissance : {{user.date_of_birth}}</p>
+            <p>Dernière connexion : {{user.last_login}}</p>
+            <p>Création du compte le : {{user.date_joined}}</p>
+        </div>
+        <div class="col-3">
+            <p>Prochain rendez-vous : {{appointment.datetime}}</p>
+        </div>
+        <div class="col-4">
+            <button type="submit"><a href="{% url 'choices' %}">Projet</button>
+            <button type="submit"><a href="https://doodle.com/meeting/participate/id/dBBrXnXd">Rendez-vous</button>
+        </div>
     </div>
 </section>
 {% endblock content %}
