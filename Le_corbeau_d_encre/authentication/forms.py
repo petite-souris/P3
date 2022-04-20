@@ -8,7 +8,7 @@ class LoginForm(forms.Form):
     first_name = forms.CharField(required=True, label="Prénom ")
     password1 = forms.CharField(widget=forms.PasswordInput(), label="Mot de passe ")
 
-# Création du formulaire inscription.
+# Creation of the form to create a new customer :
 class SignupForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = get_user_model()
