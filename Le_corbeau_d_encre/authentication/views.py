@@ -21,10 +21,10 @@ def login_page(request):
                 last_name=form.cleaned_data['last_name'], password1=form.cleaned_data['password1'])
             if user is not None:
                 login(request, user)
-                message = f'Bienvenue {user.first_name} {user.last_name}, vous êtes connecté(e) {{/user_home}}'
+                message = f'Bienvenue {user.first_name} {user.last_name}, vous êtes connecté(e) {{/user_page}}'
                 return redirect ('user_page')
             else:
-                message = 'Identifiants invalides, veuillez recommencer s il-vous-plaît.'
+                message = "Identifiants invalides, veuillez recommencer s'il-vous-plaît."
                 return redirect ('home_custom')
 
     css = "authentication/css/login_style.css"
@@ -34,7 +34,6 @@ def signup_page(request):
     form = forms.SignupForm()
     if request.method == 'POST':
         form = forms.SignupForm(request.POST)
-        #condition si le formulaire est valide, on sauve le formulaire et on le login
         if form.is_valid():
             user = form.save()
             # auto-login user
